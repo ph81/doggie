@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Cats from './pages/Cats';
 import Dogs from './pages/Dogs';
-import "./index.css";
+import './styles/globals.scss';
 
 const App = () => {
   return (

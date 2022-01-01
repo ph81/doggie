@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import Loading from "./Loading";
+import Loading from '../Loader'
+import { Button } from 'react-bootstrap'
 
 const Dog = () => {
    
@@ -43,7 +44,7 @@ const Dog = () => {
     return (
       <div className="App">
         <h1>{error}</h1>
-        <button onClick={randomDog}>Volver a intentarlo</button>
+        <Button onClick={randomDog}>Volver a intentarlo</Button>
       </div>
     );
   }
@@ -51,12 +52,12 @@ const Dog = () => {
   return (
     <div className="App">
       <img src={imageUrl} alt="Imagen de perrito aleatoria" />
-      <button onClick={randomDog}>
+      <Button onClick={randomDog}>
         ¡Otro!{" "}
         <span role="img" aria-label="corazón">
           ❤️
         </span>
-      </button>
+      </Button>
     </div>
   );
 

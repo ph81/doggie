@@ -1,11 +1,15 @@
 import React from 'react';
+import Header from '../components/Header';
 import CatData from '../components/CatData'
 
 const Cats = () => {
    return (
-      <main>
+      <>
+      <Header />
+      <main className="flex-shrink-0">
          <CatData />
       </main>
+      </>
    )
 }
 

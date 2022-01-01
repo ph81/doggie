@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Loading from "./Loading";
-//import "./index.css";
+import Loading from '../Loader'
+import { Button } from 'react-bootstrap'
 
 const Cat = () => {
    
@@ -44,7 +44,7 @@ const Cat = () => {
     return (
       <div className="App">
         <h1>{error}</h1>
-        <button onClick={randomCat}>Volver a intentarlo</button>
+        <Button onClick={randomCat}>Volver a intentarlo</Button>
       </div>
     );
   }
@@ -52,12 +52,12 @@ const Cat = () => {
   return (
     <div className="App">
       <img src={imageUrl} alt="Imagen de gatito aleatoria" />
-      <button onClick={randomCat}>
+      <Button onClick={randomCat}>
         ¡Otro!{" "}
         <span role="img" aria-label="corazón">
           ❤️
         </span>
-      </button>
+      </Button>
     </div>
   );
 }
